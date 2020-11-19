@@ -43,3 +43,55 @@
     from {opacity: 0;}
     to {opacity: 1;}
   }
+
+    /*For all images and icons on orderpage except wardrobe*/
+    .orderIcon {
+      display: block;
+      max-width:300px;
+      max-height:200px;
+      width: 120px;
+      height: 120px;
+    }
+
+     /*For wardrobe icon*/
+     .orderIconWardrobe {
+      display: block;
+      max-width:280px;
+      max-height:180px;
+      width: 120px;
+      height: 180px;
+      padding-left: 20px;
+    }
+
+    /*For packing paper icon*/
+    .orderIconPaper
+    {
+      display: block;
+      max-width:180px;
+      max-height:200px;
+      width: 60px;
+      height: 120px;
+      padding-left: 35px;
+    }
+
+    /*For tape icon*/
+    .orderIconTape
+    {
+      display: block;
+      max-width:240px;
+      max-height:1500px;
+      width: 120px;
+      height: 120px;
+      padding-right: 30px;
+    }
+
+    /*For shrink wrap icon*/
+    .orderIconWrap
+    {
+      display: block;
+      max-width:240px;
+      max-height:1500px;
+      width: 120px;
+      height: 120px;
+      padding-right: 30px;
+    }
