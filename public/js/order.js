@@ -21,6 +21,7 @@ $(document).ready(function() {
             }
         });
         console.log(indexed_array);
+        window.location.href = "../confirmation.html";
 
             // if(ifAllZeros) {
             //     alert('DID not enter anything to submit');
