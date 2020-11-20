@@ -74,7 +74,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<span class="icon-bar"></span>
 							</button>
 							<a class="navbar-brand" href="index.html" style="  font-family: 'Playball-Regular';
-      src: url(../fonts/Playball-Regular.ttf) format('truetype'); font-size:50px;color:white;"> <img src="images/Logo.png" alt="logo"></a>
+       font-size:50px;color:white;"> <img src="images/Logo.png" alt="logo"></a>
 						</div>
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -149,7 +149,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div id="RCM" class="tabcontent">
 					<div class="col-mid about-info">
 						<h3>Order Packing Materials Ahead of Time</h3>
-						<form id="form">
+						<form id="material-form">
 							<div class="form-group">
 								<label for="userName">Full Name</label>
 								<input id="userName"  class="form-control" name="RCMname" type="text" minlength="3" maxlength="35">
@@ -300,40 +300,40 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div id="PP" class="tabcontent">
 					<h3>Order a complete or partial packaging service</h3>
 						<div class="col-mid about-info">
-							<form id="form">
+							<form id="packing-form">
 								<div class="form-group">
 									<label for="userName">Full Name</label>
-									<input id="userName"  class="form-control" name="PPname" type="text" minlength="3" maxlength="35">
+									<input  class="form-control" name="name" type="text" minlength="3" maxlength="35" required>
 								</div>
 								<div class="form-group">
 									<label for="email">Email</label>
-									<input id="email"  class="form-control" name="PPemail" type="email" required />
+									<input  class="form-control" name="email" type="email" required />
 								</div>
 								<div class="form-group">
 									<label for="phone">Phone Number</label>
-									<input class="form-control" type="tel" id="phone" name="PPphone" placeholder="123-456-6784"  required>
+									<input class="form-control" type="tel" name="phone" placeholder="123-456-6784"  required>
 								</div>
 								<div class="form-group">
 									<label for="userName">Address Picking Up From</label>
-									<input id="Address1"  class="form-control" name="PPname1" type="text" minlength="3" maxlength="35" placeholder="1234 Main St.">
+									<input  class="form-control" name="pickUp" type="text" minlength="3" maxlength="50" placeholder="1234 Main St." required>
 								</div>
 								<div class="form-group">
 									<label for="userName">Destination Address</label>
-									<input id="Address2"  class="form-control" name="PPname2" type="text" minlength="3" maxlength="35" placeholder="5678 Main St.">
+									<input  class="form-control" name="dropOff" type="text" minlength="3" maxlength="50" placeholder="5678 Main St." required>
 								</div>
 								<div class="form-group">
 									<label for="datepicker">Pick up date:</label>
-									<input type="text" id="datepicker" name="PPdate">
+									<input type="text" id="datepicker" name="date" required>
 								</div>
-									<fieldset>
-										<p>
-											<label>Select Packaging Type</label>
-											<select id = "myList">
-											<option value = "1">Complete Packaging</option>
-											<option value = "2">Partial Packaging</option>
-											</select>
-										</p>
-									</fieldset>
+								<div class="form-group">
+									<label for="inlineFormCustomSelect">Preference</label>
+									<select class="custom-select" id="inlineFormCustomSelect">
+										<option selected>Choose...</option>
+										<option value="partial">Partial</option>
+										<option value="complete">Complete</option>
+										<option value="complete">Complete</option>
+									</select>
+								</div>
 								</form>
 							</form>
 						</div>
