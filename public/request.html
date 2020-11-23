@@ -2,9 +2,256 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="./css/request_css/request.css">
+
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+    </script>
+
+    <script src="js/order_js/order.js"></script>
     <title>Title</title>
 </head>
 <body>
+<!-- Links (sit on top) -->
+<div>
+    <div class="w3-top ">
+        <div class="w3-row w3-large w3-light-grey">
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block">Home</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#plans" class="w3-button w3-block">Plans</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#about" class="w3-button w3-block">About</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#contact" class="w3-button w3-block">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-content w3-container w3-padding-32">
+        <div class="w3-panel">
+            <h1><b>Village Moving Service</b></h1>
+        </div>
+        <div class="navbar row-padding justify-content-around">
+            <button class="nav-item w3-button col"  onclick="services('RCM')">London</button>
+            <button class="nav-item w3-button col "  onclick="services('PP')">Paris</button>
+            <button class="nav-item w3-button col "   onclick="services('arts')">Tokyo</button>
+            <button class="nav-item w3-button col " onclick="services('DIYS')">London</button>
+            <button class="nav-item w3-button col "  onclick="services('Piano')">Paris</button>
+            <button class="nav-item w3-button col " onclick="services('FA')">Tokyo</button>
+            <button class="nav-item w3-button col "  onclick="services('FD')">Tokyo</button>
+        </div>
+
+        <div id="RCM" class="w3-container city">
+            <h3 class="padding">Order Packing Materials Ahead of Time</h3>
+            <form id="material-form">
+                <div class="form-group">
+                    <label for="userName">Full Name</label>
+                    <input id="userName"  class="form-control" name="RCMname" type="text" minlength="3" maxlength="35">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email"  class="form-control" name="RCMemail" type="email" required />
+
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input class="form-control" type="tel" id="phone" name="RCMphone" placeholder="123-456-6784"  required>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="userName">Address Picking Up From</label>
+                    <input id="Address1"  class="form-control" name="RCMname1" type="text" minlength="3" maxlength="35" placeholder="1234 Main St.">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="userName">Destination Address</label>
+                    <input id="Address2"  class="form-control" name="RCMname2" type="text" minlength="3" maxlength="35" placeholder="5678 Main St.">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="datepicker">Pick up date:</label>
+                    <input type="text" id="datepicker" name="RCMdate">
+                </div>
+
+                <table class="table table-sm">
+                    <br><br><br>
+
+                    <tr>
+                        <th></th>
+                        <th>Item</th>
+                        <th>Size</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                    <tr>
+                        <td><img  class="orderIcon img-fluid"src="images/regBox.png" alt="Small Box"> </td>
+                        <td>Small Box</td>
+                        <td>1.5 ft^3</td>
+                        <td>$1.60</td>
+                        <td>
+                            <input type="number" name="RCMsmallBox" min="0" value="0">
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img class="orderIcon img-fluid" src="images/regBox.png" alt="Medium Box"> </td>
+                        <td>Medium Box</td>
+                        <td>3 ft^3</td>
+                        <td>$2.45</td>
+                        <td>
+                            <input type="number" name="RCMmediumBox" min="0" value="0">
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img class="orderIcon img-fluid"src="images/regBox.png" alt="Large Box"> </td>
+                        <td>Large Box</td>
+                        <td>4.5 ft tall</td>
+                        <td>$3.50</td>
+                        <td>
+                            <input type="number" name="RCMlargeBox" min="0" value="0">
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img class="orderIcon img-fluid"src="images/regBox.png" alt="Dish Box"> </td>
+                        <td>Dish Box</td>
+                        <td>5.1 ft^3</td>
+                        <td>$6.00</td>
+                        <td>
+                            <input type="number" name="RCMdishBox" min="0" value="0">
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img class="orderIconWardrobe img-fluid"src="images/WardrobeBox.png" alt="Wardrobe Box"> </td>
+                        <td>Wardrobe Box</td>
+                        <td>24" wide</td>
+                        <td>$13.50</td>
+                        <td>
+                            <input type="number" name="RCMwardrobeBox" min="0"  value="0">
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img class="orderIconPaper img-fluid"src="images/ppap.png" alt="Packing Paper"> </td>
+                        <td>Packaging paper</td>
+                        <td>25 lbs</td>
+                        <td>$26.00</td>
+                        <td>
+                            <input type="number" name="RCMpackagingPaper" min="0" value="0">
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img class="orderIconTape img-fluid" src="images/regTape.png" alt="55 Yard Tape"> </td>
+                        <td>55 Yard Tape</td>
+                        <td>3" x 55 YD</td>
+                        <td>$1.65</td>
+                        <td>
+                            <input type="number" name="RCMtape55"  min="0" value="0">
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img class="orderIconTape img-fluid"src="images/regTape.png" alt="110 Yard Tape"> </td>
+                        <td>110 Yard Tape</td>
+                        <td>3" x 110 YD</td>
+                        <td>$2.90</td>
+                        <td>
+                            <input type="number" name="RCMtape110"  min="0"  value="0">
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img class="orderIconWrap img-fluid"src="images/swrap.png" alt="Shrink Wrap"> </td>
+                        <td>Shrink Wrap</td>
+                        <td>18" x 1500' YD</td>
+                        <td>$2.90</td>
+                        <td>
+                            <input type="number" name="RCMshrinkWrap" min="0"  value="0"><br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td></td>
+                        <td><a href="confirmation.html">Submit</a></td>
+                        <td>Total:</td>
+                        <td>
+                            <input readonly type="text">
+                            <br>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <div id="PP" class="w3-container city" style="display:none">
+            <h2>aaaaa</h2>
+            <p>London is the capital of England.</p>
+        </div>
+
+        <div id="arts" class="w3-container city" style="display:none">
+            <h2>sda</h2>
+            <p>London is the capital of England.</p>
+        </div>
+
+        <div id="DIYS" class="w3-container city" style="display:none">
+            <h2>London</h2>
+            <p>London is the capital of England.</p>
+        </div>
+
+        <div id="Piano" class="w3-container city" style="display:none">
+            <h2>Paris</h2>
+            <p>Paris is the capital of France.</p>
+        </div>
+
+        <div id="FA" class="w3-container city" style="display:none">
+            <h2>sssss</h2>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+        <div id="FD" class="w3-container city" style="display:none">
+            <h2>asda</h2>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+    </div>
+
+
+    <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+        <h4>Footer</h4>
+        <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    </footer>
+</div>
 
 </body>
 </html>

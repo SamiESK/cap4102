@@ -1,0 +1,23 @@
+body {
+    margin: 16px;
+}
+
+.tab-content {
+    display: flex;
+}
+
+.tab-content > .tab-pane {
+    display: block; /* undo "display: none;" */
+    visibility: hidden;
+    margin-right: -100%;
+    width: 100%;
+}
+
+.tab-content > .active {
+    visibility: visible;
+}
+
+.city {
+    height: 75vh;
+    overflow: auto;
+}
