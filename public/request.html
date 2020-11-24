@@ -31,36 +31,37 @@
     <div class="w3-top ">
         <div class="w3-row w3-large w3-light-grey">
             <div class="w3-col s3">
-                <a href="#" class="w3-button w3-block">Home</a>
+                <a style="color: #222831; background-color: #4f8a8b;" href="#" class="w3-button w3-block">Home</a>
             </div>
             <div class="w3-col s3">
-                <a href="#plans" class="w3-button w3-block">Plans</a>
+                <a style="color: #222831; background-color: #4f8a8b;" href="#plans" class="w3-button w3-block">Plans</a>
             </div>
             <div class="w3-col s3">
-                <a href="#about" class="w3-button w3-block">About</a>
+                <a style="color: #222831; background-color: #4f8a8b;" href="#about" class="w3-button w3-block">About</a>
             </div>
             <div class="w3-col s3">
-                <a href="#contact" class="w3-button w3-block">Contact</a>
+                <a style="color: #222831; background-color: #4f8a8b;" href="#contact" class="w3-button w3-block">Contact</a>
             </div>
         </div>
     </div>
 
     <div class="w3-content w3-container w3-padding-32">
         <div class="w3-panel">
-            <h1><b>Village Moving Service</b></h1>
+            <center><h1><b>Village Moving Service</b></h1>
+            <center><img src="images/Logo.png" alt= "logo">
         </div>
         <div class="navbar row-padding justify-content-around">
-            <button class="nav-item w3-button col"  onclick="services('RCM')">London</button>
-            <button class="nav-item w3-button col "  onclick="services('PP')">Paris</button>
-            <button class="nav-item w3-button col "   onclick="services('arts')">Tokyo</button>
-            <button class="nav-item w3-button col " onclick="services('DIYS')">London</button>
-            <button class="nav-item w3-button col "  onclick="services('Piano')">Paris</button>
-            <button class="nav-item w3-button col " onclick="services('FA')">Tokyo</button>
-            <button class="nav-item w3-button col "  onclick="services('FD')">Tokyo</button>
+            <button class="nav-item w3-button col " onclick="services('RCM')">Residential & Commercial Moving</button>
+            <button class="nav-item w3-button col " onclick="services('PP')">Partial or Complete Packing & Unpacking</button>
+            <button class="nav-item w3-button col " onclick="services('arts')">Artwork & Specialty Crating</button>
+            <button class="nav-item w3-button col " onclick="services('DIYS')">Materials For do-it Yourself Packing</button>
+            <button class="nav-item w3-button col " onclick="services('Piano')">Piano Moving</button>
+            <button class="nav-item w3-button col " onclick="services('FA')">Furniture Assembly/Disassembly Service</button>
+            <button class="nav-item w3-button col " onclick="services('FD')">Furniture Disposal Service</button>
         </div>
 
         <div id="RCM" class="w3-container city">
-            <h3 class="padding">Order Packing Materials Ahead of Time</h3>
+            <h3 class="padding">Residential & Commercial Moving Service</h3>
             <form id="material-form">
                 <div class="form-group">
                     <label for="userName">Full Name</label>
@@ -208,33 +209,214 @@
         </div>
 
         <div id="PP" class="w3-container city" style="display:none">
-            <h2>aaaaa</h2>
-            <p>London is the capital of England.</p>
+            <h3>Order A Complete Or Partial Packaging Service</h3>
+                <div class="col-mid about-info">
+                    <form id="packing-form">
+                        <div class="form-group">
+                            <label for="userName">Full Name</label>
+                            <input  class="form-control" name="name" type="text" minlength="3" maxlength="35" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input  class="form-control" name="email" type="email" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input class="form-control" type="tel" name="phone" placeholder="123-456-6784"  required>
+                        </div>
+                        <div class="form-group">
+                            <label for="userName">Address Picking Up From</label>
+                            <input  class="form-control" name="pickUp" type="text" minlength="3" maxlength="50" placeholder="1234 Main St." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="userName">Destination Address</label>
+                            <input  class="form-control" name="dropOff" type="text" minlength="3" maxlength="50" placeholder="5678 Main St." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="datepicker">Pick up date:</label>
+                            <input type="text" id="datepicker" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select" id="inlineFormCustomSelect">
+                                <option selected>Choose Packaging Type</option>
+                                <option value="partial">Partial</option>
+                                <option value="complete">Complete</option>
+                            </select>
+                        </div>
+                        </form>
+                </div>
         </div>
 
         <div id="arts" class="w3-container city" style="display:none">
-            <h2>sda</h2>
-            <p>London is the capital of England.</p>
+            <h3 class="padding">Get Special Service For Art Packaging</h3>
+            <form id="form">
+                <div class="form-group">
+                    <label for="userName">Full Name</label>
+                    <input id="userName"  class="form-control" name="Artname" type="text" minlength="3" maxlength="35">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email"  class="form-control" name="Artemail" type="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input class="form-control" type="tel" id="phone" name="Artphone" placeholder="123-456-6784"  required>
+                </div>
+                <div class="form-group">
+                    <label for="userName">Address Picking Up From</label>
+                    <input id="Address1"  class="form-control" name="Artname1" type="text" minlength="3" maxlength="35" placeholder="1234 Main St.">
+                </div>
+                <div class="form-group">
+                    <label for="userName">Destination Address</label>
+                    <input id="Address2"  class="form-control" name="Artname2" type="text" minlength="3" maxlength="35" placeholder="5678 Main St.">
+                </div>
+                <div class="form-group">
+                    <label for="userName">Type of Art</label>
+                    <input id="ArtComment"  class="form-control" name="Artname3" type="text" minlength="3" maxlength="35">
+                    <textarea name="ArtCommentBox" cols="50" rows="10"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="datepicker">Pick up date:</label>
+                    <input type="text" id="datepicker" name="Artdate">
+                </div>
+            </form>
         </div>
 
         <div id="DIYS" class="w3-container city" style="display:none">
-            <h2>London</h2>
-            <p>London is the capital of England.</p>
+            <h3 class="padding">Order Materials/Boxes To Package Yourself</h3>
+            <div class="col-mid about-info">
+                <form id="form">
+                    <div class="form-group">
+                        <label for="userName">Full Name</label>
+                        <input id="userName"  class="form-control" name="DIYSname" type="text" minlength="3" maxlength="35">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email"  class="form-control" name="DIYSemail" type="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input class="form-control" type="tel" id="phone" name="DIYSphone" placeholder="123-456-6784"  required>
+                    </div>
+                    <div class="form-group">
+                        <label for="userName">Address Picking Up From</label>
+                        <input id="Address1"  class="form-control" name="DIYSname1" type="text" minlength="3" maxlength="35" placeholder="1234 Main St.">
+                    </div>
+                    <div class="form-group">
+                        <label for="userName">Destination Address</label>
+                        <input id="Address2"  class="form-control" name="DIYSname2" type="text" minlength="3" maxlength="35" placeholder="5678 Main St.">
+                    </div>
+                    <div class="form-group">
+                        <label for="datepicker">Pick up date:</label>
+                        <input type="text" id="datepicker" name="DIYSdate">
+                    </div>
+                </form>
+            </div>
         </div>
 
         <div id="Piano" class="w3-container city" style="display:none">
-            <h2>Paris</h2>
-            <p>Paris is the capital of France.</p>
+            <h3 class="padding">Exclusive Piano Moving Service</h3>
+            <div class="col-mid about-info">
+                <form id="form">
+                    <div class="form-group">
+                        <label for="userName">Full Name</label>
+                        <input id="userName"  class="form-control" name="PianoName" type="text" minlength="3" maxlength="35">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email"  class="form-control" name="PianoEmail" type="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input class="form-control" type="tel" id="phone" name="PianoPhone" placeholder="123-456-6784"  required>
+                    </div>
+                    <div class="form-group">
+                        <label for="userName">Address Picking Up From</label>
+                        <input id="Address1"  class="form-control" name="PianoName1" type="text" minlength="3" maxlength="35" placeholder="1234 Main St.">
+                    </div>
+                    <div class="form-group">
+                        <label for="userName">Destination Address</label>
+                        <input id="Address2"  class="form-control" name="PianoName2" type="text" minlength="3" maxlength="35" placeholder="5678 Main St.">
+                    </div>
+                    <div class="form-group">
+                        <label for="datepicker">Pick up date:</label>
+                        <input type="text" id="datepicker" name="PianoDate">
+                    </div>
+                </form>
+            </div>
         </div>
 
         <div id="FA" class="w3-container city" style="display:none">
-            <h2>sssss</h2>
-            <p>Tokyo is the capital of Japan.</p>
+            <h3 class="padding">Get Your Assembled Or Disassembled Furniture Packaged For Moving</h3>
+            <div class="col-mid about-info">
+                <form id="form">
+                    <div class="form-group">
+                        <label for="userName">Full Name</label>
+                        <input id="userName"  class="form-control" name="FAName" type="text" minlength="3" maxlength="35">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email"  class="form-control" name="FAemail" type="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input class="form-control" type="tel" id="phone" name="FAphone" placeholder="123-456-6784"  required>
+                    </div>
+                    <div class="form-group">
+                        <label for="userName">Address Picking Up From</label>
+                        <input id="Address1"  class="form-control" name="FAName1" type="text" minlength="3" maxlength="35" placeholder="1234 Main St.">
+                    </div>
+                    <div class="form-group">
+                        <label for="userName">Destination Address</label>
+                        <input id="Address2"  class="form-control" name="FAName2" type="text" minlength="3" maxlength="35" placeholder="5678 Main St.">
+                    </div>
+                    <div class="form-group">
+                        <label for="datepicker">Pick up date:</label>
+                        <input type="text" id="datepicker" name="FAdate">
+                    </div>
+                    <div class="form-group">
+                        <label for="inlineFormCustomSelect">Preference</label>
+                        <select class="custom-select" id="inlineFormCustomSelect">
+                            <option selected>Choose Type...</option>
+                            <option value="Assembled">Assembled</option>
+                            <option value="Disassembled">Disassembled</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
         </div>
+
         <div id="FD" class="w3-container city" style="display:none">
-            <h2>asda</h2>
-            <p>Tokyo is the capital of Japan.</p>
-        </div>
+            <h3 class="padding">Have Your Disposed Furniture Taken Care Of With Us!</h3>
+            <div class="col-mid about-info">
+                <form id="form">
+                    <div class="form-group">
+                        <label for="userName">Full Name</label>
+                        <input id="userName"  class="form-control" name="FDName" type="text" minlength="3" maxlength="35">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email"  class="form-control" name="FDemail" type="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input class="form-control" type="tel" id="phone" name="FDphone" placeholder="123-456-6784"  required>
+                    </div>
+                    <div class="form-group">
+                        <label for="userName">Address Picking Up From</label>
+                        <input id="Address1"  class="form-control" name="FDName1" type="text" minlength="3" maxlength="35" placeholder="1234 Main St.">
+                    </div>
+                    <div class="form-group">
+                        <label for="userName">Destination Address</label>
+                        <input id="Address2"  class="form-control" name="FDName2" type="text" minlength="3" maxlength="35" placeholder="5678 Main St.">
+                    </div>
+                    <div class="form-group">
+                        <label for="datepicker">Pick up date:</label>
+                        <input type="text" id="datepicker" name="FDdate">
+                    </div>
+                </form>
+            </div>
     </div>
 
 
