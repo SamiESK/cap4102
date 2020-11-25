@@ -1,0 +1,48 @@
+body {
+    margin: 16px;
+}
+
+.tab-content {
+    display: flex;
+}
+
+.tab-content > .tab-pane {
+    display: block; /* undo "display: none;" */
+    visibility: hidden;
+    margin-right: -100%;
+    width: 100%;
+}
+
+.tab-content > .active {
+    visibility: visible;
+}
+
+.city {
+    height: 75vh;
+    overflow: auto;
+}
+
+.boxIcon
+
+{
+    width: 300px;
+    height: 300px;
+}
+
+.paperIcon
+{
+    width: 150px;
+    height: 150px;
+}
+
+.tapeIcon
+{
+    width: 150px;
+    height: 150px;
+}
+
+.shrinkIcon
+{
+    width: 200px;
+    height: 200px;
+}
