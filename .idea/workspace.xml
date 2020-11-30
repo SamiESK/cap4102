@@ -20,11 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23bd4f82-6511-4379-8c26-b126a8f3d794" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/timeline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_17_2020_11_29_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_17_2020_11_29_PM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_public/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_public/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/old_public/order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/request.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/request.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +121,7 @@
       <workItem from="1605910853955" duration="3651000" />
       <workItem from="1606031641304" duration="9076000" />
       <workItem from="1606102460988" duration="1549000" />
+      <workItem from="1606775944554" duration="1879000" />
     </task>
     <servers />
   </component>

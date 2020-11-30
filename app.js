@@ -29,16 +29,9 @@ app.use('/', indexRouter);
 app.use('/api',orderRouter )
 
 
-
-AWS.config.update({
-    region: process.env.REGION,
-    accessKeyId: process.env.AWS_ACCESS_KEY,
-    secretAccessKey: process.env.SECRET_ACCESS_KEY,
-    endpoint: process.env.ENDPOINT});
-
-dynamodb = new AWS.DynamoDB();
-
 app.listen(port, () => {
     console.log("Server is running");
-})
+});
+
+
 module.exports = app;
