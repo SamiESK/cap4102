@@ -4,7 +4,6 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const logger = require('morgan');
 const helmet = require("helmet");
-const bcrypt = require('bcrypt');
 const cors = require('cors');
 require('dotenv').config();
 const port = process.env.PORT || 5000;
@@ -30,7 +29,7 @@ app.use('/api',orderRouter )
 
 
 app.listen(port, () => {
-    console.log("Server is running");
+    console.log(`Server is running on port ${port}`);
 });
 
 

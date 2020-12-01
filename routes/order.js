@@ -3,6 +3,7 @@ var router = express.Router();
 const {body, validationResult} = require('express-validator');
 const AWS = require('aws-sdk');
 const Orders = require("../dynamodb/config/order");
+const bcrypt = require('bcryptjs');
 
 router.get('/orders/:orderId', function(req, res, next) {
     const docClient = new AWS.DynamoDB.DocumentClient();
