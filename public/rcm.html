@@ -15,7 +15,6 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
 <link rel="stylesheet" href="./css/request_css/request.css">
-<link rel="icon" href="images/logo.png">
 
     <script>
         $( function() {
@@ -37,13 +36,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-top">
   <div class="w3-bar w3-teal w3-card w3-right-align w3-large">
 	<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    
-    <!-- Replace with logo?
-    <a href="" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-	-->
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+	
 	<a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Us</a>
     <div class="w3-dropdown-hover w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">
-		<a href="request.html" >Get a Quote <i class="fa fa-caret-down"></i></a>
+		<a href="request.html">Get a Quote <i class="fa fa-caret-down"></i></a>
 			<div class="w3-dropdown-content w3-white w3-card-4">
 			<a href="rcm.html">Residential and Commercial Moving</a><br>
 			<a href="pp.html">Partial or Complete Packing & Unpacking</a><br>
@@ -69,7 +66,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <!-- Header -->
 <header class="w3-container w3-pale-yellow w3-center" style="padding:128px 16px">
-  <h1 class="w3-margin w3-jumbo">Village Moving Services</h1>
+  <h1 class="w3-margin w3-jumbo">Village Moving Service</h1>
   <!--<p class="w3-xlarge"></p>-->
  <p> <img src="images/Logo.png" alt= "logo"></p>
   <a href="request.html"> <button  class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get A Quote</button> </a>
@@ -97,15 +94,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <!-- Second Grid -->
 
-        <div class="navbar row-padding justify-content-around">
-            <button class="nav-item w3-button col " onclick="services('RCM')">Residential & Commercial Moving</button>
-            <button class="nav-item w3-button col " onclick="services('PP')">Partial or Complete Packing & Unpacking</button>
-            <button class="nav-item w3-button col " onclick="services('arts')">Artwork & Specialty Crating</button>
-            <button class="nav-item w3-button col " onclick="services('DIYS')">Materials For do-it Yourself Packing</button>
-            <button class="nav-item w3-button col " onclick="services('Piano')">Piano Moving</button>
-            <button class="nav-item w3-button col " onclick="services('FA')">Furniture Assembly/Disassembly Service</button>
-            <button class="nav-item w3-button col " onclick="services('FD')">Furniture Disposal Service</button>
-        </div>
+       
 
         <div id="RCM" class="w3-container city">
             <h3 class="padding">Residential & Commercial Moving Service</h3>
@@ -153,7 +142,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
                         <th>Quantity</th>
                     </tr>
                     <tr>
-                        <td><img  class="boxIcon"src="images/regBox.png" alt="Small Box"> </td>
+                        <td><img  class="orderIcon img-fluid"src="images/regBox.png" alt="Small Box"> </td>
                         <td>Small Box</td>
                         <td>1.5 ft^3</td>
                         <td>$1.60</td>
@@ -163,7 +152,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
                         </td>
                     </tr>
                     <tr>
-                        <td><img class="boxIcon" src="images/regBox.png" alt="Medium Box"> </td>
+                        <td><img class="orderIcon img-fluid" src="images/regBox.png" alt="Medium Box"> </td>
                         <td>Medium Box</td>
                         <td>3 ft^3</td>
                         <td>$2.45</td>
@@ -173,7 +162,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
                         </td>
                     </tr>
                     <tr>
-                        <td><img class="boxIcon"src="images/regBox.png" alt="Large Box"> </td>
+                        <td><img class="orderIcon img-fluid"src="images/regBox.png" alt="Large Box"> </td>
                         <td>Large Box</td>
                         <td>4.5 ft tall</td>
                         <td>$3.50</td>
@@ -183,7 +172,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
                         </td>
                     </tr>
                     <tr>
-                        <td><img class="boxIcon"src="images/regBox.png" alt="Dish Box"> </td>
+                        <td><img class="orderIcon img-fluid"src="images/regBox.png" alt="Dish Box"> </td>
                         <td>Dish Box</td>
                         <td>5.1 ft^3</td>
                         <td>$6.00</td>
@@ -193,7 +182,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
                         </td>
                     </tr>
                     <tr>
-                        <td><img class="boxIcon"src="images/WardrobeBox.png" alt="Wardrobe Box"> </td>
+                        <td><img class="orderIconWardrobe img-fluid"src="images/WardrobeBox.png" alt="Wardrobe Box"> </td>
                         <td>Wardrobe Box</td>
                         <td>24" wide</td>
                         <td>$13.50</td>
@@ -203,7 +192,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
                         </td>
                     </tr>
                     <tr>
-                        <td><img class="paperIcon"src="images/ppap.png" alt="Packing Paper"> </td>
+                        <td><img class="orderIconPaper img-fluid"src="images/ppap.png" alt="Packing Paper"> </td>
                         <td>Packaging paper</td>
                         <td>25 lbs</td>
                         <td>$26.00</td>
@@ -213,7 +202,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
                         </td>
                     </tr>
                     <tr>
-                        <td><img class="tapeIcon" src="images/regTape.png" alt="55 Yard Tape"> </td>
+                        <td><img class="orderIconTape img-fluid" src="images/regTape.png" alt="55 Yard Tape"> </td>
                         <td>55 Yard Tape</td>
                         <td>3" x 55 YD</td>
                         <td>$1.65</td>
@@ -223,7 +212,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
                         </td>
                     </tr>
                     <tr>
-                        <td><img class="tapeIcon"src="images/regTape.png" alt="110 Yard Tape"> </td>
+                        <td><img class="orderIconTape img-fluid"src="images/regTape.png" alt="110 Yard Tape"> </td>
                         <td>110 Yard Tape</td>
                         <td>3" x 110 YD</td>
                         <td>$2.90</td>
@@ -233,7 +222,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
                         </td>
                     </tr>
                     <tr>
-                        <td><img class="shrinkIcon"src="images/swrap.png" alt="Shrink Wrap"> </td>
+                        <td><img class="orderIconWrap img-fluid"src="images/swrap.png" alt="Shrink Wrap"> </td>
                         <td>Shrink Wrap</td>
                         <td>18" x 1500' YD</td>
                         <td>$2.90</td>
@@ -242,8 +231,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
                         </td>
                     </tr>
                     <tr>
-                        <td> </td>
-                        <td></td>
                         <td><a href="confirmation.html">Submit</a></td>
                         <td>Total:</td>
                         <td>
@@ -255,234 +242,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
             </form>
         </div>
 
-        <div id="PP" class="w3-container city" style="display:none">
-            <h3>Order A Complete Or Partial Packaging Service</h3>
-                <div class="col-mid about-info">
-                    <form id="packing-form">
-                        <div class="form-group">
-                            <label for="userName">Full Name</label>
-                            <input  class="form-control" name="name" type="text" minlength="3" maxlength="35" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input  class="form-control" name="email" type="email" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input class="form-control" type="tel" name="phone" placeholder="123-456-6784"  required>
-                        </div>
-                        <div class="form-group">
-                            <label for="userName">Address Picking Up From</label>
-                            <input  class="form-control" name="pickUp" type="text" minlength="3" maxlength="50" placeholder="1234 Main St." required>
-                        </div>
-                        <div class="form-group">
-                            <label for="userName">Destination Address</label>
-                            <input  class="form-control" name="dropOff" type="text" minlength="3" maxlength="50" placeholder="5678 Main St." required>
-                        </div>
-                        <div class="form-group">
-                            <label for="datepicker">Pick up date:</label>
-                            <input type="text" id="datepicker" name="date" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="inlineFormCustomSelect">Preference</label>
-                            <select class="custom-select" id="inlineFormCustomSelect">
-                                <option selected>Choose Packaging Type</option>
-                                <option value="partial">Partial</option>
-                                <option value="complete">Complete</option>
-                            </select>
-                        </div>
-                        </form>
-                </div>
-        </div>
+        
+   
 
-        <div id="arts" class="w3-container city" style="display:none">
-            <h3 class="padding">Get Special Service For Art Packaging</h3>
-            <form id="form">
-                <div class="form-group">
-                    <label for="userName">Full Name</label>
-                    <input id="userName"  class="form-control" name="Artname" type="text" minlength="3" maxlength="35">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input id="email"  class="form-control" name="Artemail" type="email" required />
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input class="form-control" type="tel" id="phone" name="Artphone" placeholder="123-456-6784"  required>
-                </div>
-                <div class="form-group">
-                    <label for="userName">Address Picking Up From</label>
-                    <input id="Address1"  class="form-control" name="Artname1" type="text" minlength="3" maxlength="35" placeholder="1234 Main St.">
-                </div>
-                <div class="form-group">
-                    <label for="userName">Destination Address</label>
-                    <input id="Address2"  class="form-control" name="Artname2" type="text" minlength="3" maxlength="35" placeholder="5678 Main St.">
-                </div>
-                <div class="form-group">
-                    <label for="userName">Type of Art</label>
-                    <input id="ArtComment"  class="form-control" name="Artname3" type="text" minlength="3" maxlength="35">
-                    <textarea name="ArtCommentBox" cols="50" rows="10"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="datepicker">Pick up date:</label>
-                    <input type="text" id="datepicker" name="Artdate">
-                </div>
-            </form>
-        </div>
-
-        <div id="DIYS" class="w3-container city" style="display:none">
-            <h3 class="padding">Order Materials/Boxes To Package Yourself</h3>
-            <div class="col-mid about-info">
-                <form id="form">
-                    <div class="form-group">
-                        <label for="userName">Full Name</label>
-                        <input id="userName"  class="form-control" name="DIYSname" type="text" minlength="3" maxlength="35">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input id="email"  class="form-control" name="DIYSemail" type="email" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input class="form-control" type="tel" id="phone" name="DIYSphone" placeholder="123-456-6784"  required>
-                    </div>
-                    <div class="form-group">
-                        <label for="userName">Address Picking Up From</label>
-                        <input id="Address1"  class="form-control" name="DIYSname1" type="text" minlength="3" maxlength="35" placeholder="1234 Main St.">
-                    </div>
-                    <div class="form-group">
-                        <label for="userName">Destination Address</label>
-                        <input id="Address2"  class="form-control" name="DIYSname2" type="text" minlength="3" maxlength="35" placeholder="5678 Main St.">
-                    </div>
-                    <div class="form-group">
-                        <label for="datepicker">Pick up date:</label>
-                        <input type="text" id="datepicker" name="DIYSdate">
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <div id="Piano" class="w3-container city" style="display:none">
-            <h3 class="padding">Exclusive Piano Moving Service</h3>
-            <div class="col-mid about-info">
-                <form id="form">
-                    <div class="form-group">
-                        <label for="userName">Full Name</label>
-                        <input id="userName"  class="form-control" name="PianoName" type="text" minlength="3" maxlength="35">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input id="email"  class="form-control" name="PianoEmail" type="email" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input class="form-control" type="tel" id="phone" name="PianoPhone" placeholder="123-456-6784"  required>
-                    </div>
-                    <div class="form-group">
-                        <label for="userName">Address Picking Up From</label>
-                        <input id="Address1"  class="form-control" name="PianoName1" type="text" minlength="3" maxlength="35" placeholder="1234 Main St.">
-                    </div>
-                    <div class="form-group">
-                        <label for="userName">Destination Address</label>
-                        <input id="Address2"  class="form-control" name="PianoName2" type="text" minlength="3" maxlength="35" placeholder="5678 Main St.">
-                    </div>
-                    <div class="form-group">
-                        <label for="datepicker">Pick up date:</label>
-                        <input type="text" id="datepicker" name="PianoDate">
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <div id="FA" class="w3-container city" style="display:none">
-            <h3 class="padding">Get Your Assembled Or Disassembled Furniture Packaged For Moving</h3>
-            <div class="col-mid about-info">
-                <form id="form">
-                    <div class="form-group">
-                        <label for="userName">Full Name</label>
-                        <input id="userName"  class="form-control" name="FAName" type="text" minlength="3" maxlength="35">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input id="email"  class="form-control" name="FAemail" type="email" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input class="form-control" type="tel" id="phone" name="FAphone" placeholder="123-456-6784"  required>
-                    </div>
-                    <div class="form-group">
-                        <label for="userName">Address Picking Up From</label>
-                        <input id="Address1"  class="form-control" name="FAName1" type="text" minlength="3" maxlength="35" placeholder="1234 Main St.">
-                    </div>
-                    <div class="form-group">
-                        <label for="userName">Destination Address</label>
-                        <input id="Address2"  class="form-control" name="FAName2" type="text" minlength="3" maxlength="35" placeholder="5678 Main St.">
-                    </div>
-                    <div class="form-group">
-                        <label for="datepicker">Pick up date:</label>
-                        <input type="text" id="datepicker" name="FAdate">
-                    </div>
-                    <div class="form-group">
-                        <label for="inlineFormCustomSelect">Preference</label>
-                        <select class="custom-select" id="inlineFormCustomSelect">
-                            <option selected>Choose Type...</option>
-                            <option value="Assembled">Assembled</option>
-                            <option value="Disassembled">Disassembled</option>
-                        </select>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <div id="FD" class="w3-container city" style="display:none">
-            <h3 class="padding">Have Your Disposed Furniture Taken Care Of With Us!</h3>
-            <div class="col-mid about-info">
-                <form id="form">
-                    <div class="form-group">
-                        <label for="userName">Full Name</label>
-                        <input id="userName"  class="form-control" name="FDName" type="text" minlength="3" maxlength="35">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input id="email"  class="form-control" name="FDemail" type="email" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input class="form-control" type="tel" id="phone" name="FDphone" placeholder="123-456-6784"  required>
-                    </div>
-                    <div class="form-group">
-                        <label for="userName">Address Picking Up From</label>
-                        <input id="Address1"  class="form-control" name="FDName1" type="text" minlength="3" maxlength="35" placeholder="1234 Main St.">
-                    </div>
-                    <div class="form-group">
-                        <label for="userName">Destination Address</label>
-                        <input id="Address2"  class="form-control" name="FDName2" type="text" minlength="3" maxlength="35" placeholder="5678 Main St.">
-                    </div>
-                    <div class="form-group">
-                        <label for="datepicker">Pick up date:</label>
-                        <input type="text" id="datepicker" name="FDdate">
-                    </div>
-                </form>
-            </div>
-    </div>
-  <!--    <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>-->
-    </div>
-  </div>
- 
-</div>
 
 
 
 <!-- Footer -->
 <footer class="w3-container w3-black w3-padding-64 w3-padding-64 w3-center w3-opacity">  
-
     <p>Contact Us at (561) 929- 1709</p>
     <p>DOT License Number  3742839</p>
-   
+    <h7><a href="privacy.html">Privacy Policy</a></h7>
     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-   </footer>
+</footer>
 
 <script>
 // Used to toggle the menu on small screens when clicking on the menu button
