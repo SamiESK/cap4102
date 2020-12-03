@@ -4,9 +4,12 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const logger = require('morgan');
 const helmet = require("helmet");
+const hpp = require('hpp');
 const cors = require('cors');
+
 require('dotenv').config();
 const port = process.env.PORT || 5000;
+
 const AWS = require("aws-sdk");
 const Orders = require('./dynamodb/config/order.js');
 
@@ -15,16 +18,18 @@ const orderRouter = require('./routes/order');
 
 let dynamodb;
 
-var app = express();
+const app = express();
+
 app.use(helmet());
 app.use(cors());
 app.use(logger('dev'));
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(hpp());
 app.use(bodyParser.json())
 app.use(cookieParser());
 
-app.use(express.static(path.join(__dirname, 'public')));
-app.use('/', indexRouter);
+app.use(express.static('public'));
+
 app.use('/api',orderRouter )
 
 
