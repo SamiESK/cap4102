@@ -20,7 +20,7 @@ class Rcm {
         this.table = "Orders";
         this.email = email;
         this.name = "";
-        this.id = 0;
+        this.id = bcrypt.hash(email).then(data => data);
         this.date = date;
     }
 

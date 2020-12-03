@@ -111,15 +111,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number*</label>
-                            <input class="form-control" type="tel" name="phone" placeholder="123-456-6784"  required>
+                            <input class="form-control" type="tel" id="phone" name="phone" placeholder="123-456-6784"  required>
                         </div>
                         <div class="form-group">
-                            <label for="userName">Address Picking Up From*</label>
-                            <input  class="form-control" name="pickUp" type="text" minlength="3" maxlength="50" placeholder="1234 Main St." required>
+                            <label for="pickUpAddress">Address Picking Up From*</label>
+                            <input  class="form-control" id="pickUpAddress" name="pickUp" type="text" minlength="3" maxlength="125" placeholder="1234 Main St." required>
                         </div>
                         <div class="form-group">
-                            <label for="userName">Destination Address*</label>
-                            <input  class="form-control" name="dropOff" type="text" minlength="3" maxlength="50" placeholder="5678 Main St." required>
+                            <label for="dropOffAddress">Destination Address*</label>
+                            <input  class="form-control" id="dropOffAddress" name="dropOff" type="text" minlength="3" maxlength="125" placeholder="5678 Main St." required>
                         </div>
                         <div class="form-group">
                             <label for="datepicker">Preferred Pickup Date:*</label>
@@ -127,8 +127,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
                         </div>
                         <div class="form-group">
                             <label for="inlineFormCustomSelect">Preference</label>
-                            <select class="custom-select" id="inlineFormCustomSelect">
-                                <option selected>Choose Packaging Type</option>
+                            <select class="custom-select" name="preference" id="inlineFormCustomSelect" >
                                 <option value="partial">Partial</option>
                                 <option value="complete">Complete</option>
                             </select>
