@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 const {body, validationResult} = require('express-validator');
 const AWS = require('aws-sdk');
-const Orders = require("../dynamodb/config/order");
+const Orders = require("../dynamodb/config/rcm");
 const bcrypt = require('bcryptjs');
 
 router.get('/orders/:orderId', function(req, res, next) {
@@ -35,7 +35,7 @@ router.get('/orders/:orderId', function(req, res, next) {
 
 });
 
-router.post('/orders',  [
+router.post('/orders/rcm',  [
     body('name').trim().escape(),
     body('email').trim().escape().normalizeEmail(),
     body('phone').trim().escape().toInt(),
@@ -83,10 +83,6 @@ router.post('/orders',  [
 
 });
 
-router.put('/orders/:orderId', function(req, res, next) {
-    const docClient = new AWS.DynamoDB.DocumentClient();
-
-});
 
 router.delete('/orders/:orderId', function(req, res, next) {
     const docClient = new AWS.DynamoDB.DocumentClient();

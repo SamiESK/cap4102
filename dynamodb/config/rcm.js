@@ -1,6 +1,6 @@
 const bcrypt = require("bcryptjs");
 
-class Orders {
+class Rcm {
 
     constructor(email, date ,smallBox = 0, mediumBox = 0, largeBox = 0, dishBox = 0,
                 pictureBox = 0, wardrobeBox = 0, packingPaper = 0, tape55 = 0,
@@ -26,4 +26,4 @@ class Orders {
 
 }
 
-module.exports = Orders;
+module.exports = Rcm;

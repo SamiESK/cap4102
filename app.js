@@ -11,7 +11,7 @@ require('dotenv').config();
 const port = process.env.PORT || 5000;
 
 const AWS = require("aws-sdk");
-const Orders = require('./dynamodb/config/order.js');
+const Orders = require('./dynamodb/config/rcm.js');
 
 const indexRouter = require('./routes/index');
 const orderRouter = require('./routes/order');
