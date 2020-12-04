@@ -73,182 +73,153 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <!--<p class="w3-xlarge"></p>-->
  <p> <img src="images/Logo.png" alt= "logo"></p>
   </header>
+      
 
-<!-- First Grid -->
-<!--
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
-      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+<div id="RCM" class="w3-container city">
+    <h3 class="padding">Residential & Commercial Moving Service</h3>
+    <form id="material-form">
+        <div class="form-group">
+            <label for="userName">Full Name*</label>
+            <input id="userName"  class="form-control" name="RCMname" type="text" minlength="3" maxlength="35">
+        </div>
+        <div class="form-group">
+            <label for="email">Email*</label>
+            <input id="email"  class="form-control" name="RCMemail" type="email" required />
 
-      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number*</label>
+            <input class="form-control" type="tel" id="phone" name="RCMphone" placeholder="123-456-6784"  required>
 
-    <div class="w3-third w3-center">
-      <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
-    </div>
-  </div>
-</div> 
--->
-
-<!-- Second Grid -->
-
-       
-
-        <div id="RCM" class="w3-container city">
-            <h3 class="padding">Residential & Commercial Moving Service</h3>
-            <form id="material-form">
-                <div class="form-group">
-                    <label for="userName">Full Name*</label>
-                    <input id="userName"  class="form-control" name="RCMname" type="text" minlength="3" maxlength="35">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email*</label>
-                    <input id="email"  class="form-control" name="RCMemail" type="email" required />
-
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number*</label>
-                    <input class="form-control" type="tel" id="phone" name="RCMphone" placeholder="123-456-6784"  required>
-
-                </div>
-
-                <div class="form-group">
-                    <label for="userName">Address Picking Up From*</label>
-                    <input id="Address1"  class="form-control" name="RCMname1" type="text" minlength="3" maxlength="35" placeholder="1234 Main St.">
-
-                </div>
-
-                <div class="form-group">
-                    <label for="userName">Destination Address*</label>
-                    <input id="Address2"  class="form-control" name="RCMname2" type="text" minlength="3" maxlength="35" placeholder="5678 Main St.">
-
-                </div>
-
-                <div class="form-group">
-                    <label for="datepicker">Requested Pickup Date:*</label>
-                    <input type="text" id="datepicker" name="RCMdate">
-                </div>
-
-                <table class="table table-sm">
-                   
-
-                    <tr>
-                        <th></th>
-                        <th>Item</th>
-                        <th>Size</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                    </tr>
-                    <tr>
-                        <td><img  class="orderIcon img-fluid" src="images/smallBox.png" alt="Small Box"> </td>
-                        <td>Small Box</td>
-                        <td>1.5 ft^3</td>
-                        <td>$1.60</td>
-                        <td>
-                            <input type="number" name="RCMsmallBox" min="0" value="0">
-                            <br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img class="orderIcon img-fluid" src="images/mediumBox.png" alt="Medium Box"> </td>
-                        <td>Medium Box</td>
-                        <td>3 ft^3</td>
-                        <td>$2.45</td>
-                        <td>
-                            <input type="number" name="RCMmediumBox" min="0" value="0">
-                            <br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img class="orderIcon img-fluid" src="images/largeBox.png" alt="Large Box"> </td>
-                        <td>Large Box</td>
-                        <td>4.5 ft tall</td>
-                        <td>$3.50</td>
-                        <td>
-                            <input type="number" name="RCMlargeBox" min="0" value="0">
-                            <br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img class="orderIcon img-fluid" src="images/dishBox.png" alt="Dish Box"> </td>
-                        <td>Dish Box</td>
-                        <td>5.1 ft^3</td>
-                        <td>$6.00</td>
-                        <td>
-                            <input type="number" name="RCMdishBox" min="0" value="0">
-                            <br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img class="orderIconWardrobe img-fluid"src="images/wardrobeBox.jpg" alt="Wardrobe Box"> </td>
-                        <td>Wardrobe Box</td>
-                        <td>24" wide</td>
-                        <td>$13.50</td>
-                        <td>
-                            <input type="number" name="RCMwardrobeBox" min="0"  value="0">
-                            <br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img class="paperIcon" src="images/ppap.png" alt="Packing Paper"> </td>
-                        <td>Packaging paper</td>
-                        <td>25 lbs</td>
-                        <td>$26.00</td>
-                        <td>
-                            <input type="number" name="RCMpackagingPaper" min="0" value="0">
-                            <br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img class="tapeIcon" src="images/regTape.png" alt="55 Yard Tape"> </td>
-                        <td>55 Yard Tape</td>
-                        <td>3" x 55 YD</td>
-                        <td>$1.65</td>
-                        <td>
-                            <input type="number" name="RCMtape55"  min="0" value="0">
-                            <br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img class="tapeIcon"src="images/regTape.png" alt="110 Yard Tape"> </td>
-                        <td>110 Yard Tape</td>
-                        <td>3" x 110 YD</td>
-                        <td>$2.90</td>
-                        <td>
-                            <input type="number" name="RCMtape110"  min="0"  value="0">
-                            <br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img class="shrinkIcon" src="images/swrap.png" alt="Shrink Wrap"> </td>
-                        <td>Shrink Wrap</td>
-                        <td>18" x 1500' YD</td>
-                        <td>$2.90</td>
-                        <td>
-                            <input type="number" name="RCMshrinkWrap" min="0"  value="0"><br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="./confirmation.html">Submit</a></td>
-                        <td>Total:</td>
-                        <td>
-                            <input readonly type="text">
-                            <br>
-                        </td>
-                    </tr>
-                </table>
-            </form>
         </div>
 
-        
-   
+        <div class="form-group">
+            <label for="userName">Address Picking Up From*</label>
+            <input id="Address1"  class="form-control" name="RCMname1" type="text" minlength="3" maxlength="35" placeholder="1234 Main St.">
 
+        </div>
 
+        <div class="form-group">
+            <label for="userName">Destination Address*</label>
+            <input id="Address2"  class="form-control" name="RCMname2" type="text" minlength="3" maxlength="35" placeholder="5678 Main St.">
 
+        </div>
+
+        <div class="form-group">
+            <label for="datepicker">Requested Pickup Date:*</label>
+            <input type="text" id="datepicker" name="RCMdate">
+        </div>
+
+        <table class="table table-sm">
+            
+
+            <tr>
+                <th></th>
+                <th>Item</th>
+                <th>Size</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td><img  class="orderIcon img-fluid" src="images/smallBox.png" alt="Small Box"> </td>
+                <td>Small Box</td>
+                <td>1.5 ft^3</td>
+                <td>$1.60</td>
+                <td>
+                    <input type="number" name="RCMsmallBox" min="0" value="0">
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td><img class="orderIcon img-fluid" src="images/mediumBox.png" alt="Medium Box"> </td>
+                <td>Medium Box</td>
+                <td>3 ft^3</td>
+                <td>$2.45</td>
+                <td>
+                    <input type="number" name="RCMmediumBox" min="0" value="0">
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td><img class="orderIcon img-fluid" src="images/largeBox.png" alt="Large Box"> </td>
+                <td>Large Box</td>
+                <td>4.5 ft tall</td>
+                <td>$3.50</td>
+                <td>
+                    <input type="number" name="RCMlargeBox" min="0" value="0">
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td><img class="orderIcon img-fluid" src="images/dishBox.png" alt="Dish Box"> </td>
+                <td>Dish Box</td>
+                <td>5.1 ft^3</td>
+                <td>$6.00</td>
+                <td>
+                    <input type="number" name="RCMdishBox" min="0" value="0">
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td><img class="orderIconWardrobe img-fluid"src="images/wardrobeBox.jpg" alt="Wardrobe Box"> </td>
+                <td>Wardrobe Box</td>
+                <td>24" wide</td>
+                <td>$13.50</td>
+                <td>
+                    <input type="number" name="RCMwardrobeBox" min="0"  value="0">
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td><img class="paperIcon" src="images/ppap.png" alt="Packing Paper"> </td>
+                <td>Packaging paper</td>
+                <td>25 lbs</td>
+                <td>$26.00</td>
+                <td>
+                    <input type="number" name="RCMpackagingPaper" min="0" value="0">
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td><img class="tapeIcon" src="images/regTape.png" alt="55 Yard Tape"> </td>
+                <td>55 Yard Tape</td>
+                <td>3" x 55 YD</td>
+                <td>$1.65</td>
+                <td>
+                    <input type="number" name="RCMtape55"  min="0" value="0">
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td><img class="tapeIcon"src="images/regTape.png" alt="110 Yard Tape"> </td>
+                <td>110 Yard Tape</td>
+                <td>3" x 110 YD</td>
+                <td>$2.90</td>
+                <td>
+                    <input type="number" name="RCMtape110"  min="0"  value="0">
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td><img class="shrinkIcon" src="images/swrap.png" alt="Shrink Wrap"> </td>
+                <td>Shrink Wrap</td>
+                <td>18" x 1500' YD</td>
+                <td>$2.90</td>
+                <td>
+                    <input type="number" name="RCMshrinkWrap" min="0"  value="0"><br>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="./confirmation.html">Submit</a></td>
+                <td>Total:</td>
+                <td>
+                    <input readonly type="text">
+                    <br>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
 
 <!-- Footer -->
 <footer class="w3-container w3-teal w3-padding-64 w3-padding-64 w3-center  ">  
