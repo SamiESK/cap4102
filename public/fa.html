@@ -104,35 +104,35 @@ footer {
                 <form id="form">
                     <div class="form-group">
                         <label for="userName">Full Name*</label>
-                        <input id="userName"  class="form-control" name="FAName" type="text" minlength="3" maxlength="35">
+                        <input id="userName"  class="form-control" name="name" type="text" minlength="3" maxlength="50">
                     </div>
                     <div class="form-group">
                         <label for="email">Email*</label>
-                        <input id="email"  class="form-control" name="FAemail" type="email" required />
+                        <input id="email"  class="form-control" name="email" type="email" required />
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number*</label>
-                        <input class="form-control" type="tel" id="phone" name="FAphone" placeholder="123-456-6784"  required>
+                        <input class="form-control" type="tel" id="phone" name="phone" placeholder="123-456-6784"  required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userName">Address</label>
+                        <input id="Address2"  class="form-control" name="address" type="text" minlength="3" maxlength="150" placeholder="5678 Main St." required>
                     </div>
                     <div class="form-group">
-                        <label for="userName">Address Picking Up From*</label>
-                        <input id="Address1"  class="form-control" name="FAName1" type="text" minlength="3" maxlength="35" placeholder="1234 Main St.">
+                        <label for="datepicker">Preferred Date</label>
+                        <input type="text" id="datepicker" name="date" required>
                     </div>
                     <div class="form-group">
-                        <label for="userName">Destination Address*</label>
-                        <input id="Address2"  class="form-control" name="FAName2" type="text" minlength="3" maxlength="35" placeholder="5678 Main St.">
-                    </div>
-                    <div class="form-group">
-                        <label for="datepicker">Preferred Pickup Date*</label>
-                        <input type="text" id="datepicker" name="FAdate">
-                    </div>
-                    <div class="form-group">
-                        <label for="inlineFormCustomSelect">Preference</label>
-                        <select class="custom-select" id="inlineFormCustomSelect">
-                            <option selected>Choose Type...</option>
+                        <label for="preference">Disassembled or Assembled?</label>
+                        <select name="work" class="custom-select" id="preference">
                             <option value="Assembled">Assembled</option>
                             <option value="Disassembled">Disassembled</option>
                         </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">List of Items to be work on</label>
+                        <textarea name="description" id="description" cols="30" rows="10"></textarea>
                     </div>
                     
                       <a href="./confirmation.html">Submit</a>
