@@ -7,8 +7,8 @@ const art_order = require("../dynamodb/config/arts");
 const bcrypt = require('bcryptjs');
 
 AWS.config.update({
-    accessKeyId: "AKIAUMEBK5A3I4OLLV63",
-    secretAccessKey:"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",
+    accessKeyId: process.env.AWS_KEY_ID,
+    secretAccessKey: process.env.AWS_SECRET_KEY,
     region: "us-east-1"
 })
 
