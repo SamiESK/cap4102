@@ -2,12 +2,12 @@ const bcrypt = require("bcryptjs");
 
 class arts {
 
-    constructor(email, date, phone, pickup, dropOff, name, description, preference)
+    constructor(email, date, phone, pickup, dropOff, name, description)
     {
         this.table = "art";
         this.email = email;
         this.name = name;
-        this.id = bcrypt.hash(email).then(data => data);
+        this.id = 0;
         this.date = date;
         this.phone = phone;
         this.pickup = pickup;

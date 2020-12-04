@@ -32,7 +32,14 @@ app.use(cookieParser());
 
 app.use(express.static('public'));
 
-app.use('/api',orderRouter )
+
+AWS.config.update({
+    accessKeyId: process.env.AWS_KEY_ID,
+    secretAccessKey:process.env.AWS_SECRET_KEY,
+    region: "us-east-1"
+})
+app.use('/api',orderRouter );
+
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);

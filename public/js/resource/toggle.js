@@ -9,6 +9,6 @@ function myFunction() {
 
 $(document).ready(function () {
     $( function() {
-        $( "#datepicker" ).datepicker();
+        $( "#datepicker" ).datepicker({ minDate: -20});
     } );
 })

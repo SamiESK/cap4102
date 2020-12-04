@@ -7,11 +7,11 @@ $(document).ready(function() {
     } );
 
 
-    $('form').on('submit', function(e){
+    $('#form').on('submit', function(e){
         let ifAllZeros = true;
 
         e.preventDefault();
-        let str = $('form').serializeArray();
+        let str = $('#form').serializeArray();
 
         let indexed_array = {};
 
@@ -21,16 +21,12 @@ $(document).ready(function() {
 
         indexed_array.date = $("#datepicker").datepicker( 'getDate' );
 
-        console.log(indexed_array);
-        window.location.href = "../confirmation.html";
+         console.log(indexed_array);
 
-        if(ifAllZeros) {
-            alert('DID not enter anything to submit');
-        }
-        else {
+
             $.ajax({
                 type: "POST",
-                url: "/api/orders",
+                url: "/api/orders/art",
                 data: indexed_array,
                 success: function(data, textStatus, jqXHR)
                 {
@@ -38,10 +34,15 @@ $(document).ready(function() {
                     window.location.href = "../confirmation.html";
                 },
                 error: function(XMLHttpRequest, textStatus, errorThrown) {
-                    alert("Status: " + textStatus); alert("Error: " + errorThrown);
+                    if (XMLHttpRequest.status == 301) {
+                        window.location.href = "../confirmation.html";
+                    }
+                    else if ( XMLHttpRequest.status >= 400) {
+                        alert("Error On Our End, Please Try Again later");
+                    }
                 }
             })
-        }
+
 
     });
 });

@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 
-    $('form').on('submit', function(e){
+    $('#material-form').on('submit', function(e){
         let ifAllZeros = true;
 
         e.preventDefault();
@@ -20,16 +20,14 @@ $(document).ready(function() {
                 ifAllZeros = false;
             }
         });
-        console.log(indexed_array);
-        window.location.href = "../confirmation.html";
 
         if(ifAllZeros) {
-            alert('DID not enter anything to submit');
+            alert('Did not enter anything to be submitted, please double check your input');
         }
         else {
             $.ajax({
                 type: "POST",
-                url: "/api/orders",
+                url: "/api/orders/rcm",
                 data: indexed_array,
                 success: function(data, textStatus, jqXHR)
                 {
