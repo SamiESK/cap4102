@@ -23,20 +23,21 @@ $(document).ready(function() {
         console.log(indexed_array);
         window.location.href = "../confirmation.html";
 
-            // if(ifAllZeros) {
-            //     alert('DID not enter anything to submit');
-            // }
-            // else {
-            //     $.ajax({
-            //         type: "POST",
-            //         url: "/api/orders",
-            //         data: indexed_array,
-            //         success: function(data, textStatus, jqXHR)
-            //         {
-            //             console.log(jqXHR);
-            //         },
-            //     })
-            // }
+            if(ifAllZeros) {
+                alert('DID not enter anything to submit');
+            }
+            else {
+                $.ajax({
+                    type: "POST",
+                    url: "/api/orders",
+                    data: indexed_array,
+                    success: function(data, textStatus, jqXHR)
+                    {
+                        console.log(jqXHR);
+                        window.location.href = "../confirmation.html";
+                    },
+                })
+            }
 
     });
   });

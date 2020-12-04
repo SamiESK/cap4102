@@ -6,6 +6,8 @@ const logger = require('morgan');
 const helmet = require("helmet");
 const hpp = require('hpp');
 const cors = require('cors');
+const favicon = require('serve-favicon');
+
 
 require('dotenv').config();
 const port = process.env.PORT || 5000;
@@ -31,7 +33,6 @@ app.use(cookieParser());
 app.use(express.static('public'));
 
 app.use('/api',orderRouter )
-
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
