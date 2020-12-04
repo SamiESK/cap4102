@@ -14,6 +14,10 @@ DEPENDENCES
 styles to reset headings https://github.com/melnik909/r-title
 */
 
+.timelinePics
+{
+    padding-right: 30px;
+}
 .r-title{
     margin-top: var(--rTitleMarginTop, 0) !important;
     margin-bottom: var(--rTitleMarginBottom, 0) !important;
