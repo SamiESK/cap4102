@@ -4,7 +4,7 @@ class piano {
 
     constructor(email, date, phone, pickup, dropOff, name, pianoNum)
     {
-        this.table = "Orders";
+        this.table = "piano";
         this.email = email;
         this.name = name;
         this.id = bcrypt.hash(email).then(data => data);

@@ -4,7 +4,7 @@ class assembly {
 
     constructor(email, date, phone, pickup, name, description, preference)
     {
-        this.table = "Orders";
+        this.table = "furnAssembly";
         this.email = email;
         this.name = name;
         this.id = bcrypt.hash(email).then(data => data);

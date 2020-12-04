@@ -4,7 +4,7 @@ class arts {
 
     constructor(email, date, phone, pickup, dropOff, name, description, preference)
     {
-        this.table = "Orders";
+        this.table = "art";
         this.email = email;
         this.name = name;
         this.id = bcrypt.hash(email).then(data => data);

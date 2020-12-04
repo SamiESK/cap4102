@@ -4,7 +4,7 @@ class disposal {
 
     constructor(email, date, phone, pickup, name, description)
     {
-        this.table = "Orders";
+        this.table = "furnDisposal";
         this.email = email;
         this.name = name;
         this.id = bcrypt.hash(email).then(data => data);

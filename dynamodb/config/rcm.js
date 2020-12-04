@@ -17,7 +17,7 @@ class Rcm {
         this.tape110 =tape110;
         this.shrinkWrap = shrinkWraper;
         this.other = other;
-        this.table = "Orders";
+        this.table = "rcm";
         this.email = email;
         this.name = "";
         this.id = bcrypt.hash(email).then(data => data);

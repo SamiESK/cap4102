@@ -4,7 +4,7 @@ class packing {
 
     constructor(email, date, phone, pickup, dropOff, name, preference)
     {
-        this.table = "Orders";
+        this.table = "packing";
         this.email = email;
         this.name = name;
         this.id = bcrypt.hash(email).then(data => data);
