@@ -1,5 +1,11 @@
 
+
 $(document).ready(function() {
+
+    $( function() {
+        $( "#datepicker" ).datepicker();
+    } );
+
 
     $('form').on('submit', function(e){
         let ifAllZeros = true;
@@ -15,11 +21,6 @@ $(document).ready(function() {
 
         indexed_array.date = $("#datepicker").datepicker( 'getDate' );
 
-        Object.keys(indexed_array).map(function(key, index) {
-            if (indexed_array[key] != "" || indexed_array[key] != 0) {
-                ifAllZeros = false;
-            }
-        });
         console.log(indexed_array);
         window.location.href = "../confirmation.html";
 
