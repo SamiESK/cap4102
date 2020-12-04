@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23bd4f82-6511-4379-8c26-b126a8f3d794" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dynamodb/config/contact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +128,7 @@
       <workItem from="1607112852746" duration="1164000" />
       <workItem from="1607116104464" duration="1680000" />
       <workItem from="1607118168626" duration="3745000" />
-      <workItem from="1607122071008" duration="1723000" />
+      <workItem from="1607122071008" duration="2131000" />
     </task>
     <servers />
   </component>
